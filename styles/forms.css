@@ -72,3 +72,28 @@ legend{
   outline: none;
   background-color: #fffaf0;
 }
+
+/* Esconde a mensagem de erro por padrão */
+.input-wrapp .error {
+  display: none;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #b91c1c;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Exibe a mensagem de erro corretamente */
+.input-wrapp input:invalid:not(:placeholder-shown):not(:focus) ~ .error {
+  display: flex;
+}
+
+/* Adiciona borda de erro */
+.input-wrapp input:invalid:not(:placeholder-shown):not(:focus) {
+  border: 2px solid #f87171;
+}
+
+.gardian {
+  margin-top: 2rem; 
+}

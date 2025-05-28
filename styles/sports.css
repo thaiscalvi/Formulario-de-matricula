@@ -1,0 +1,80 @@
+/* Container da grade */
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Card clicável */
+.option-card {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  position: relative;
+}
+
+/* Esconde o botão de rádio */
+.option-card input {
+  display: none;
+}
+
+/* Área visual do card */
+.option-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+  gap: 0.5rem;
+  background-color: #fafafa;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+/* Ícone */
+.option-content img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Texto */
+.option-content span {
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.enrollment-options {
+  margin-top: 2rem; /* ou ajuste o valor como preferir */
+}
+
+/* Quando selecionado */
+.option-card input:checked + .option-content {
+  border: 2px solid var(--stroke-highlight, #f97316);
+  background-color: #fff7ed;
+}
+
+/* Bolinha com check */
+.option-card input:checked + .option-content::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: #f97316;
+  border-radius: 50%;
+
+  background-image: url("../../assets/icons/check.png"); /* <-- caminho corrigido */
+  background-size: 0.6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+

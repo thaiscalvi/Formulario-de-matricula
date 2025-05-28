@@ -108,6 +108,132 @@
 
           </fieldset>
 
+          <fieldset class="gardian">
+            <legend>Informações do responsável</legend>
+            
+            <div class="input-wrapper">
+              <label for="gardian">Nome do responsável</label>
+              <input type="text" id="guardian" name="gardiian">
+              <small>Principal responsável legal e contato de emergência</small>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(10) 9 98765-4321">
+            </div>
+
+            <div class="input-wrapp">
+              <label for="mail">Email</label>
+              <input type="email" name="mail" id="mail" required placeholder="email@exemplo.com">
+              <div class="error">
+                <img src="assets/alert-circle.svg" alt="">
+                <span>Insira um e-mail válido</span>
+              </div>
+            </div>
+
+          </fieldset>
+
+          <fieldset class="enrollment-options">
+  <legend>Opções de matrícula</legend>
+
+  <!-- Turno de estudo -->
+  <div class="input-wrapper">
+    <label>Selecione o turno de estudo</label>
+    <div class="options-grid">
+      <label class="option-card">
+        <input type="radio" name="shift" value="morning" checked>
+        <div class="option-content">
+          <img src="assets/icons/sun-cloud-02.png" alt="Ícone manhã">
+          <span>Manhã</span>
+        </div>
+      </label>
+
+      <label class="option-card">
+        <input type="radio" name="shift" value="afternoon">
+        <div class="option-content">
+          <img src="assets/icons/sun-02.png" alt="Ícone tarde">
+          <span>Tarde</span>
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <!-- Esporte desejado -->
+  <div class="input-wrapper">
+    <label>Em qual esporte você gostaria de inscrever seu filho?</label>
+    <div class="options-grid">
+      <label class="option-card">
+        <input type="radio" name="sport" value="futebol">
+        <div class="option-content">
+          <img src="assets/icons/football.png" alt="Ícone futebol">
+          <span>Futebol</span>
+        </div>
+      </label>
+
+      <label class="option-card">
+        <input type="radio" name="sport" value="basquete">
+        <div class="option-content">
+          <img src="assets/icons/basketball-02.png" alt="Ícone basquete">
+          <span>Basquete</span>
+        </div>
+      </label>
+
+      <label class="option-card">
+        <input type="radio" name="sport" value="natacao">
+        <div class="option-content">
+          <img src="assets/icons/swimming.png" alt="Ícone natação">
+          <span>Natação</span>
+        </div>
+      </label>
+
+      <label class="option-card">
+        <input type="radio" name="sport" value="yoga">
+        <div class="option-content">
+          <img src="assets/icons/yoga-02.png" alt="Ícone yoga">
+          <span>Yoga</span>
+        </div>
+      </label>
+
+      <label class="option-card">
+        <input type="radio" name="sport" value="volei">
+        <div class="option-content">
+          <img src="assets/icons/volleyball.png" alt="Ícone vôlei">
+          <span>Volley</span>
+        </div>
+      </label>
+
+      <label class="option-card">
+        <input type="radio" name="sport" value="luta">
+        <div class="option-content">
+          <img src="assets/icons/boxing-glove-01.png" alt="Ícone luta">
+          <span>Luta</span>
+        </div>
+      </label>
+    </div>
+  </div>
+          </fieldset>
+
+       <div class="form-footer">
+<div class="terms-wrapper">
+       <label class="checkbox">
+      <input type="checkbox" name="agree" required>
+      <span class="custom-checkbox"></span>
+      <span>
+        Declaro que li e concordo com os 
+        <a href="#" target="_blank">Termos e Condições</a> 
+        e com a 
+        <a href="#" target="_blank">Política de Privacidade</a> 
+        da escola Estrela do Amanhã.
+      </span>
+    </label>
+      </div>
+
+      <div class="form-actions">
+  <button type="button" class="btn-outline">Salvar respostas</button>
+  <button type="submit" class="btn-primary">Fazer matrícula</button>
+</div>
+        </div>
+
         </form>
       </div>
     </main>
